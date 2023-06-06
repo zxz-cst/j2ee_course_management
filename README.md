@@ -5,10 +5,15 @@
 
 #### 软件架构
 MyEclipse 2014及以上
+
 Java EE6 - Web 3.0及以上
+
 Java 1.7及以上
+
 JSTL 1.2.1及以上
+
 Tomcat v8.0及以上
+
 
 #### 主要功能
 
