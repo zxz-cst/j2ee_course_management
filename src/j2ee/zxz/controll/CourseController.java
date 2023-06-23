@@ -92,7 +92,11 @@ public class CourseController extends HttpServlet {
 		
 		if(sub.equals("确认"))
 		{
-			
+		if(courseNum.equals("")) {
+			Session.setAttribute("rs","课程名称和课程人数不能为空，新增失败");
+	    	response.sendRedirect("/Homework_062/courseFailure.jsp");
+	    	return;
+		}
 		Course course = new Course(1,courseName,Integer.parseInt(courseNum),courseType);
 		CourseService service = new CourseService();
 	    if(service.insert(course))

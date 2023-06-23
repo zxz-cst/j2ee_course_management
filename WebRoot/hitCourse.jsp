@@ -15,11 +15,52 @@ HttpSession Session = request.getSession(true);
     <meta name="content-type" content="text/html; charset=UTF-8">
     
     <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
-
+	<style>
+		table tr {
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: rgb(92, 125, 166);
+		}
+		table {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(92, 125, 166);
+		font-size:20px
+		}
+		caption {
+		margin-bottom:10px
+		}
+		table td {
+		padding: 5px 10px;
+		font-size: 12px;
+		font-family: Verdana;
+		color: rgb(92, 125, 166);
+		font-size:15px
+		}
+		 
+		table tr:nth-child(even) {
+		background: rgb(211, 223, 237)
+		}
+		table tr:nth-child(odd) {
+		background: #FFF
+		}
+		.but{
+			border: none;
+			height: 30px;
+			width: 200px;
+			margin-bottom: 10px;
+			background: lightseagreen;
+			color: white;
+			margin-top: 10px;
+		}
+		.but:hover {
+			background: cadetblue;
+		}
+	</style>
   </head>
   <body >
   <form action = "/Homework_062/servlet/CourseController" method = "POST">
-   <table width="300" border="1" cellspacing="0" id="tab1" align="center" style="width: 647px; ">
+   <table  border="1" cellspacing="0" id="tab1" align="center" >
             <caption>学号：<u><%= Session.getAttribute("result1") %></u>  姓名：<u><%= Session.getAttribute("result2") %></u>  
             <tr>
                 <td style="width: 30px; "> </td>
@@ -55,8 +96,8 @@ cs = DAO.findcourse();
         <center>
        <br>
 
-<input type = "submit" name = "sub" value = "退选">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type = "submit" name = "sub" value = "课程管理">
+<input type = "submit" name = "sub" value = "退选" class="but" />    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "submit" name = "sub" value = "课程管理" class="but" />
 
 </center>
 </form>
