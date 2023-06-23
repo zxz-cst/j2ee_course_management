@@ -19,7 +19,7 @@ Tomcat v8.0及以上
 
 进入登录界面输入正确的信息并点击登录。
 
-![输入图片说明](img/image1.png)
+![输入图片说明](img/image.png)
 
 跳转到登陆成功界面5秒后跳转到hitCourse界面。
 
